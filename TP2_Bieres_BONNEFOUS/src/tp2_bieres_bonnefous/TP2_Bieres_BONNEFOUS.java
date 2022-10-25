@@ -15,19 +15,23 @@ public class TP2_Bieres_BONNEFOUS { // cuisine,ingrédients
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    BouteilleBiere uneBiere1 = new BouteilleBiere() ; 
-    uneBiere1.nom = "Cuvée des trolls";
-    uneBiere1.degreAlcool = 7.0 ;
-    uneBiere1.brasserie = "Dubuisson";
-    uneBiere1.ouverte = false;
-    uneBiere1.lireEtiquette();
+    BouteilleBiere autreBiere1 = new BouteilleBiere ("Cuvée des trolls",7.0,"Dubuisson");
+    //BouteilleBiere uneBiere1 = new BouteilleBiere() ; 
+    //uneBiere1.nom = "Cuvée des trolls";
+    //uneBiere1.degreAlcool = 7.0 ;
+    //uneBiere1.brasserie = "Dubuisson";
+    //uneBiere1.ouverte = false;
+    //uneBiere1.lireEtiquette();
    
-    BouteilleBiere uneBiere2 = new BouteilleBiere() ; 
-    uneBiere2.nom = "Leffe";
-    uneBiere2.degreAlcool = 6.6 ;
-    uneBiere2.brasserie = "Abbaye de Leffe";
-    uneBiere2.ouverte = false;
-    uneBiere2.lireEtiquette();
+    BouteilleBiere autreBiere2 = new BouteilleBiere ("Leffe",6.6,"Abbaye de Leffe");
+    //BouteilleBiere uneBiere2 = new BouteilleBiere() ; 
+    //uneBiere2.nom = "Leffe";
+    //uneBiere2.degreAlcool = 6.6 ;
+    //uneBiere2.brasserie = "Abbaye de Leffe";
+    //uneBiere2.ouverte = false;
+    //uneBiere2.lireEtiquette();
+    
+  
     }
     
 }
