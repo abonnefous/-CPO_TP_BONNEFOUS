@@ -12,6 +12,9 @@ public class Convertisseur {
 
     int nbConversions;
 
+    /**
+     * initialisation du nombre de conversions à 0
+     */
     public Convertisseur() {
         nbConversions = 0;
     }
@@ -52,5 +55,8 @@ public class Convertisseur {
         double Farenheit = ((Kelvin-273.15)*1.8)-32;
         nbConversions +=1;
         return Farenheit;
+    }
+    
+    
     }
 }
