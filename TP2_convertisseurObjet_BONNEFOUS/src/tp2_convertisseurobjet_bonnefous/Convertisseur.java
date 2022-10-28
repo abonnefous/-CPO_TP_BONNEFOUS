@@ -26,37 +26,40 @@ public class Convertisseur {
 
     public double CelciusVersKelvin(double Celcius) {
         double Kelvin = Celcius + 273.15;
-        nbConversions +=1;
+        nbConversions += 1;
         return Kelvin;
     }
-             
+
     public double KelvinVersCelcuis(double Kelvin) {
         double Celcius = Kelvin - 273.15;
-        nbConversions +=1;
+        nbConversions += 1;
         return Celcius;
     }
-    
+
     public double FarenheitVersCelcius(double Farenheit) {
-        double Celcius= (Farenheit-32)/1.8;
-        nbConversions +=1;
+        double Celcius = (Farenheit - 32) / 1.8;
+        nbConversions += 1;
         return Celcius;
     }
+
     public double CelciusVersFarenheit(double Celcius) {
-        double Farenheit = (Celcius*1.8)+32;
-        nbConversions +=1;
+        double Farenheit = (Celcius * 1.8) + 32;
+        nbConversions += 1;
         return Farenheit;
     }
+
     public double FarenheitVersKelvin(double Farenheit) {
-        double Kelvin = ((Farenheit-32)/1.8)+273.15;
-        nbConversions +=1;
+        double Kelvin = ((Farenheit - 32) / 1.8) + 273.15;
+        nbConversions += 1;
         return Kelvin;
     }
+
     public double KelvinVersFarenheit(double Kelvin) {
-        double Farenheit = ((Kelvin-273.15)*1.8)-32;
-        nbConversions +=1;
+        double Farenheit = ((Kelvin - 273.15) * 1.8) - 32;
+        nbConversions += 1;
         return Farenheit;
     }
     
-    
-    }
+  
 }
+
