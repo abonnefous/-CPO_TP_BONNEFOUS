@@ -4,6 +4,8 @@
  */
 package tp2_convertisseurobjet_bonnefous;
 
+import java.util.Scanner;
+
 /**
  *
  * @author alizeebonnefous
@@ -15,11 +17,18 @@ public class TP2_convertisseurObjet_BONNEFOUS {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-  Convertisseur Convert1 = new Convertisseur();
-  System.out.println(Convert1); 
-  
-  Convertisseur Convert2 = new Convertisseur();
-  System.out.println(Convert2);
+
+        Scanner sc = new Scanner(System.in); //coder un scanner qui permettra de rentrer la valeur de v à la main dans le Output  
+        double T = sc.nextDouble();
+
+        Convertisseur Convert1 = new Convertisseur();
+        System.out.println(Convert1);
+
+        Convertisseur Convert2 = new Convertisseur();
+        double r = Convert2.CelciusVersFarenheit(T);
+        System.out.println("la valeur de " + T + " celcius en farenheit est " + r);
+
+        System.out.println(Convert2);
     }
-    
+
 }
