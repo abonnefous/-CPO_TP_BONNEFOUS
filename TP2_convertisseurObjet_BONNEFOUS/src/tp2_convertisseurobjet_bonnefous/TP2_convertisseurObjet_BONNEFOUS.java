@@ -19,6 +19,7 @@ public class TP2_convertisseurObjet_BONNEFOUS {
         // TODO code application logic here
 
         Scanner sc = new Scanner(System.in); //coder un scanner qui permettra de rentrer la valeur de v à la main dans le Output  
+        System.out.println("Rentrez une valeur de température");
         double T = sc.nextDouble();
 
         Convertisseur Convert1 = new Convertisseur();
