@@ -31,6 +31,11 @@ public class TP2_Bieres_BONNEFOUS { // cuisine,ingrédients
     //uneBiere2.ouverte = false;
     //uneBiere2.lireEtiquette();
     
+    BouteilleBiere autreBiere3 = new BouteilleBiere ("Kronembourg",4.2,"Obernai");
+    
+    BouteilleBiere autreBiere4 = new BouteilleBiere ("Heineken",5,"de L'Esperance");
+    
+    BouteilleBiere autreBiere5 = new BouteilleBiere ("1664",5.5,"Le Canon");
   
     }
     
