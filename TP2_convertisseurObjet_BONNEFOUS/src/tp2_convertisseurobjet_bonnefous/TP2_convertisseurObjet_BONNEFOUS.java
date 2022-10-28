@@ -16,7 +16,10 @@ public class TP2_convertisseurObjet_BONNEFOUS {
     public static void main(String[] args) {
         // TODO code application logic here
   Convertisseur Convert1 = new Convertisseur();
-            
+  System.out.println(Convert1); 
+  
+  Convertisseur Convert2 = new Convertisseur();
+  System.out.println(Convert2);
     }
     
 }
