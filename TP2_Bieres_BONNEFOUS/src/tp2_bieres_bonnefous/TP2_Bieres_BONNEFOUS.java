@@ -36,7 +36,7 @@ public class TP2_Bieres_BONNEFOUS { // cuisine,ingrédients
     BouteilleBiere autreBiere4 = new BouteilleBiere ("Heineken",5,"de L'Esperance");
     
     BouteilleBiere autreBiere5 = new BouteilleBiere ("1664",5.5,"Le Canon");
-  
+    System.out.println(autreBiere1);
     }
     
 }
