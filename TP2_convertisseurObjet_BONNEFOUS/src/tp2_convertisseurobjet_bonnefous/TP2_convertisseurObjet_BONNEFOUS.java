@@ -17,19 +17,62 @@ public class TP2_convertisseurObjet_BONNEFOUS {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+         Convertisseur a = new Convertisseur();
+        /*
+        Convertisseur b = new Convertisseur();
+        
+        a.FarenheitVersCelcius(12);
+        b.FarenheitVersCelcius(12);
+        a.KelvinVersCelcius(12);
+        
+        System.out.println("Le nombre de conversion de a est : " + a.nbConversions + " et de b est : " + b.nbConversions);
+         */
+        Scanner sc = new Scanner(System.in);
+        System.out.println("1) CelciusVersKelvin");
+        System.out.println("2) KelvinVersCelcius");
+        System.out.println("3) FarenheitVersCelcius");
+        System.out.println("4) CelciusVersFarenheit");
+        System.out.println("5) KelvinVersFarenheit");
+        System.out.println("6) FarenheitVersKelvin");
+        System.out.println(" Bonjour, quelle conversion souhaiter vous faire ?");
+        int nb1 = sc.nextInt();
+        while (nb1 > 6 || nb1 < 1) {
+            System.out.println("ERREUR La valeur n'est pas comprise entre 1 et 6");
+            System.out.println("\n Entrer un nombre svp :");
+            nb1 = sc.nextInt(); //il y a une boucle tant que nb1 (1 a 6) n'est pas associe a un programme
+        }
+        System.out.println(" Bonjour, quelle température souhaiter vous utiliser?");
+        double temp = sc.nextDouble();
+        switch (nb1) {
+            case 1 -> {
+                // CelciusVersKelvin
+                System.out.println("La température en Kelvin est  " + a.CelciusVersKelvin(temp));
+            }
+            case 2 -> {
+                //KelvinVersCelcius
+                System.out.println("La température en Celcius est  " + a.KelvinVersCelcuis(temp));
+            }
+            case 3 -> {
+                //FarenheitVersCelcius
+                System.out.println("La température en Celcius est  " + a.FarenheitVersCelcius(temp));
+            }
+            case 4 -> {
+                //CelciusVersFarenheit
+                System.out.println("La température en Fareinheit est  " + a.CelciusVersFarenheit(temp));
+            }
+            case 5 -> {
+                //KelvinVersFarenheit
+                System.out.println("La température en Fareinheit est  " + a.KelvinVersFarenheit(temp));
+            }
+            case 6 -> {
+                //FarenheitVersKelvin
+                System.out.println("La température en Kelvin est  " + a.FarenheitVersKelvin(temp));
+            }
 
-        Scanner sc = new Scanner(System.in); //coder un scanner qui permettra de rentrer la valeur de v à la main dans le Output  
-        System.out.println("Rentrez une valeur de température");
-        double T = sc.nextDouble();
+        }
 
-        Convertisseur Convert1 = new Convertisseur();
-        System.out.println(Convert1);
-
-        Convertisseur Convert2 = new Convertisseur();
-        double r = Convert2.CelciusVersFarenheit(T);
-        System.out.println("la valeur de " + T + " celcius en farenheit est " + r);
-
-        System.out.println(Convert2);
     }
-
 }
+
+
+       
