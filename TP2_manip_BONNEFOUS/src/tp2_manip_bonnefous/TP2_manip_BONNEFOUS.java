@@ -18,12 +18,20 @@ public class TP2_manip_BONNEFOUS {
         Tartiflette assiette1 = new Tartiflette(500) ;
         Tartiflette assiette2 = new Tartiflette(600) ;
         Tartiflette assiette3 = assiette2 ;
-        assiette2 = assiette1 ;
-        assiette1 = assiette3 ;
+        // pour que assiette1 et assiette2 s'intarvertisse on a :        
+        //assiette2 = assiette1 ;
+        //assiette1 = assiette3 ;
         System.out.println("nb de calories de Assiette 2 : " + assiette2.nbCalories);
-        System.out.println("nb de calories de Assiette 3 : " + assiette3.nbCalories);
+        System.out.println("nb de calories de Assiette 3 : " + assiette3.nbCalories);       // il y a donc bien 3 tartiflettes avec 2 ayant le même nombre de calories
        
+        Moussaka tab[] = new Moussaka[10]; // tableau de moussaka vide (pour l'instant de taille : 10 places
+        for (int i = 0; i < 9; i++) { //bloucle
+            Moussaka a = new Moussaka(); //cree des moussakas
+            tab[i]=a; //le met dans le tableau
+            System.out.println(tab[i]); //ppour comprendre et afficher le tableau
+        }    
     }
+        
     
 }
     
